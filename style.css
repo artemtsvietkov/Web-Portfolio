@@ -1,0 +1,284 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* a { 
+    text-decoration: none;
+    color: white;
+} */
+
+.skip-link {
+    background-color: white;
+    position: absolute;
+    transform: translateY(-120%);
+    left: 0,5rem;
+    transition: transform 325ms ease-in;
+}
+
+.skip-link:focus{
+    transform: translateY(0);
+}
+img {
+    max-width: 100%;
+}
+/* Header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: black;
+    padding: 2rem 1rem;
+
+    font-size: 1.2rem;
+    
+    position: fixed;
+
+    left: 0;
+    right: 0;
+}
+.header-logo {
+    font-family: 'Honk', system-ui;
+    font-size: 2rem;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+
+    gap: 2rem;
+
+    font-family: 'Poppins', sans-serif;
+
+    color: white;
+    text-wrap: nowrap;
+    
+}
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: clamp(0.7rem, 1rem + 0.2vw, 1.2vw);
+}
+
+.nav-link:hover{
+    background-color: grey;
+    color: black;
+    padding: 2rem 1rem;
+}
+
+/* Burger-menu */
+.burger-menu {
+    border: none;
+    background: none;
+    color: inherit;
+
+    display: grid;
+    gap: 0.5rem;
+
+    width: 2rem;
+    cursor: pointer;
+
+    display: none;
+
+    transform: translateY(1000);
+    
+}
+
+.burger-menu-icon {
+    fill: white;
+}
+/* Burger-menu */
+/* Header */
+
+
+/* Main */
+.hero-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 5rem 4rem;
+    padding-top:10rem;
+    background-color: pink;
+    gap: 5rem;
+    
+}
+
+.text-wrapper {
+    width: 40%;
+}
+.text {
+    column-span: 1;
+    /* grid-column: 2 / span 1; */
+    
+}
+.hero-pic {
+    width: 30%;
+    height: 20%;
+}
+
+.section-main {
+    text-align: start;
+    /* padding-left: 1rem; */
+    margin-bottom: 1rem;
+}
+
+.main-section {
+
+    padding-block: 5rem;
+    display: grid;
+    gap: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.article {
+    
+    width: 70%;
+    margin-inline: auto;
+}
+.columns {
+    
+    columns: 2;
+    column-width: 250px;
+    column-gap: 3rem;
+    
+}
+
+
+@media (max-width: 725px) {
+    
+    .header {
+
+        padding-block: 1rem;
+    }
+
+    .nav-list {
+        position: fixed;
+        flex-direction: column;
+        background-color: black;
+        min-height: 60rem;
+   
+        right:0;
+        top: 0;
+       
+        font-size: 1rem;
+        padding-inline: 3rem;
+        padding-top: 5rem;
+        color: black;
+   
+        transform: translateX(100%);
+        transition: transform .2s ease-in-out;
+    }
+
+    .nav-list-opened {
+        transform: unset;
+    }
+    .nav-link:hover{
+        background-color: none;
+        color: none;
+        padding: 0;
+    }
+
+    .burger-menu{
+        display: block;
+        z-index: 999;
+    }
+
+    .burger-menu-opened .burger-menu-icon{
+        fill: white
+    }
+
+    .nav-link {
+        color: black;
+        font-size: clamp(1rem, 1.125rem + 0.5vw, 2vw);
+    }
+
+    .hero-wrapper {
+        flex-direction: column;
+        gap: 2rem;
+        padding-top: 6rem;
+    }
+
+    .text-wrapper {
+        width: 80%;
+    }
+    
+    .hero-pic {
+        width: 60%;
+        height: 30%;
+    }
+
+    .footer {
+        
+    }
+
+    .main-footer {
+       gap: 0;
+       
+    }
+    .footer-nav {
+        
+    }
+    .footer-nav-link {
+        color: white;
+        text-decoration: none;
+        gap: 0;
+    }
+    .footer-nav-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        
+    }
+    
+    
+}
+/* End of Main */
+
+/* Footer */
+.footer {
+    background-color: black;
+    height: 10rem;
+    width: auto;
+}
+
+.main-footer {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-nav {
+    margin-right: 1rem;
+    font-family: 'Poppins', sans-serif;
+    text-wrap: nowrap;
+}
+.footer-nav-list {
+    display: flex;
+    list-style: none;
+    margin-top: 3rem;
+    gap: 2rem;
+}
+
+.footer-nav-link {
+
+    font-size: clamp(0.7rem, 1rem + 0.2vw, 1.2vw);
+    text-decoration: none;
+    color: white;
+}
+
+.logo-pic {
+    margin-left: 1rem;
+    margin-top: 3rem;
+}
+
+
+/* End of Footer */
+

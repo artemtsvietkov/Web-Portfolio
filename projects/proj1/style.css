@@ -1,0 +1,57 @@
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color:rgb(254, 254, 254);
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 200px 1fr;
+}
+
+
+.header {
+    grid-column: span 2;
+}
+
+.aside {
+    background-color: gray;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 20px;
+
+}
+
+
+
+
+.header_navigation_list {
+    display: flex;
+    gap:15px;
+    font-weight: bold;
+    font-size:  20px;
+    justify-content: right;
+    list-style-type: none;
+    border-bottom: 2px solid black;
+    border-radius: 0px;
+    padding: 0px 70px;
+    margin-top: 0;
+    margin: 0;
+          
+}
+
+.list_item {
+
+    padding: 30px 20px;
+}
+
+.list_item:hover {
+
+    color:white;
+    background-color: black;
+
+}

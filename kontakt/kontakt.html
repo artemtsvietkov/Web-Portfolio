@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="kontakt.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="bughuy.js" defer></script>
+    <title>Document</title>
+</head>
+
+<header class="header">
+    <div class="header-logo">
+        <span style = "color: #ffffff;">M2</span>
+    </div>
+    <nav class="primary-nav">
+        <ul class="nav-list" id="nav-list">
+            <li><a href="" class="nav-link" style = "color: #ffffff;" id="hem">Hem</a></li>
+            <li><a href="/grunderna/grunderna.html" class="nav-link" style = "color: #ffffff;" target="_blank">Grunderna</a></li>
+            <li><a href="/index.html" class="nav-link" style = "color: #ffffff;">Historia</a></li>
+            <li><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/" class="nav-link" style = "color: #ffffff;" target="_blank">Tillgänglighet</a></li>
+            <li><a href="" class="nav-link" style = "color: #ffffff;">Hur funkar det?</a></li>
+            <li><a href="/Portfolio/portfolio.html" class="nav-link" style = "color: #ffffff;">Genvägar</a></li>
+            <li><a href="/kontakt/kontakt.html" class="nav-link" style = "color: #ffffff;">Kontakt</a></li>
+            <li><a href="" class="nav-link" style = "color: #ffffff;">Om mig</a></li>
+        </ul>
+    </nav>
+    <button class="burger-menu" id="burger-menu" aria-expanded="false">
+        <svg class="burger-menu-icon" viewbox="0 0 100 100" width="32" height="32">
+            <rect width="90" height="5" x="10" y="30" rx="3"> </rect>
+            <rect width="50" height="5" x="50" y="60" rx="3"> </rect>
+        </svg>
+    </button>
+</header>
+
+<body>
+    <main>
+        <form action="https://formsubmit.co/artem.tsvietkov@elev.ga.ntig.se" method="post">
+            <fieldset class="form-errand" role="radiogroup"> 
+                <legend> Ärande </legend>       
+                    <input type="radio" name="ärande" id="anlita-oss">
+                    <label for="anlita-oss"> Anlita oss</label>            
+                    <input type="radio" name="ärande" id="hjälp">
+                    <label for="hjälp"> Hjälp </label>
+                    <input type="radio" name="ärande" id="annan-fråga">
+                    <label for="annan-fråga"> Annan fråga </label>
+            </fieldset>
+            <div>
+               <div>
+                <label for="fname">Namn</label><br>
+                <input type="text" id="text-box" name="fname" value="" placeholder="Name"><br>
+               </div>
+               <div>    
+                 <label for="company">Företag</label><br>
+                 <input type="text" id="text-box" name="company" value="" placeholder="Företag"><br><br>
+               </div>
+               <div>
+                   <label for="email">Email</label><br>
+                   <input type="email" id="text-box" name="mail" placeholder="Email">
+               </div>
+               <div>
+                   <label for="msg">Meddelande</label>
+                   <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Meddelande"></textarea>
+               </div>
+               <input type="reset" value="Återställ formuläret">
+               <input type="submit" value="Skicka nu">
+            </div>
+        </form>
+    </main>
+</body>
+</html>

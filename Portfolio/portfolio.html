@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-logo">
+            <span style="color: #ffffff;">M2</span>
+        </div>
+        <nav class="primary-nav">
+            <ul class="nav-list" id="nav-list">
+                <li><a href="" class="nav-link" id="hem">Hem</a></li>
+                <li><a href="/grunderna/grunderna.html" class="nav-link" target="_blank">Grunderna</a></li>
+                <li><a href="/index.html" class="nav-link">Historia</a></li>
+                <li><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/" class="nav-link" target="_blank">Tillgänglighet</a></li>
+                <li><a href="" class="nav-link">Hur funkar det?</a></li>
+                <li class="dropdown">
+                    <a href="/Portfolio/portfolio.html" class="nav-link">Genvägar ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#Welcome" class="nav-link">Visa allt</a></li>
+                        <li><a href="#" class="nav-link">Projekt 1</a></li>
+                        <li><a href="#" class="nav-link">Projekt 2</a></li>
+                        <li><a href="#" class="nav-link">Projekt 3</a></li>
+                        <li><a href="#" class="nav-link">Projekt 4</a></li>
+                    </ul>
+                </li>
+                <li><a href="/kontakt/kontakt.html" class="nav-link">Kontakt</a></li>
+                <li><a href="" class="nav-link">Om mig</a></li>
+            </ul>
+        </nav>
+        <button class="burger-menu" id="burger-menu" aria-expanded="false">
+            <svg class="burger-menu-icon" viewBox="0 0 100 100" width="32" height="32">
+                <rect width="90" height="5" x="10" y="30" rx="3"></rect>
+                <rect width="50" height="5" x="50" y="60" rx="3"></rect>
+            </svg>
+        </button>
+    </header>
+    <script src="scripts.js"></script>
+
+    <main>
+        <h1 id="Welcome">Welcome to Tsvietkov's portfolio!</h1>
+        <div class="project-list">
+            <a href="/projects/proj1/index.html" class="project-container" target="_blank">
+                <img src="/img/projpic1.JPG" alt="">
+                <div class="project-text-container">
+                    <h2>Project 1</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus nisi deleniti reiciendis ipsum ipsam, quibusdam, nulla consequatur asperiores maxime aperiam quod explicabo quis exercitationem ad maiores. Modi, quis delectus?</p>
+                </div>
+            </a>
+            <a class="project-container" href="/projects/proj2/index.html" target="_blank">
+                <img src="/img/projpic2.JPG" alt="">
+                <div class="project-text-container">
+                    <h2>Project 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus nisi deleniti reiciendis ipsum ipsam, quibusdam, nulla consequatur asperiores maxime aperiam quod explicabo quis exercitationem ad maiores. Modi, quis delectus?</p>
+                </div>
+            </a>
+            <a class="project-container" href="/projects/proj4/index.html" target="_blank">
+                <img src="/img/projpic3.JPG" alt="">
+                <div class="project-text-container">
+                    <h2>Project 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus nisi deleniti reiciendis ipsum ipsam, quibusdam, nulla consequatur asperiores maxime aperiam quod explicabo quis exercitationem ad maiores. Modi, quis delectus?</p>
+                </div>
+            </a>
+            <a class="project-container" href="/projects/proj3/index.html" target="_blank">
+                <img src="/img/projpic4.JPG" alt="">
+                <div class="project-text-container">
+                    <h2>Project 4</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias minus nisi deleniti reiciendis ipsum ipsam, quibusdam, nulla consequatur asperiores maxime aperiam quod explicabo quis exercitationem ad maiores. Modi, quis delectus?</p>
+                </div>
+            </a>
+        </div>
+    </main>
+    <footer class="footer">
+        <nav class="footer-navigation">
+            <ul class='footer-nav-list'>
+                <li class='footer-nav-item'><a class='footer-nav-link' href=''>Hem</a></li>
+                <li class='footer-nav-item'><a class='footer-nav-link' href='/Portfolio/portfolio.html'>Projekt</a></li>
+                <li class='footer-nav-item'><a class='footer-nav-link' href='/kontakt/kontakt.html'>Kontakt</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

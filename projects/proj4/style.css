@@ -1,0 +1,25 @@
+.parent {
+    background-color: black;
+    padding:0.5px;
+    position: sticky;
+    top: 0;
+}
+
+h2 {
+    color: blue;
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.child-A {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.4rem;
+}
+
+body {
+    margin-left: 2px;
+    padding: 0;
+}
